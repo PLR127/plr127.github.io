@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 170, 228, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  </style>
+  <script>
+  function cambioOpciones() {
+    document.getElementById('showId').value = document.getElementById('valorOpciones').value;
+  }
+  function cambioOpcionesSelcet() {
+    document.getElementById('showIdSelect').value = "Que mientras realizaban el servicio de sus clases por las distintas zonas de la localidad, con indicativo " + document.getElementById('opciones').value + ", fueron comisionados por el " + document.getElementById('opciones2').value+ ", con indicativo K-1, pues según llamada recibida por la sala del 092, en " + document.getElementById('direccion').value + " , " + document.getElementById('aviso').value;
+  }
+
+  </script>
+</head>
+<body>
+  <header class="container" style="text-align: center;">
+    <h1>Generador de Texto para Partes de Appolo</h1>
+  </header>
+  <br>
+  <form class="container">
+    Introduce la dirección del envío:
+    <input type='text' id='direccion' size="80%"/>
+  </form>
+  <br>
+  <form class="container">
+    Introduce el texto del aviso:
+    <input type='text' id='aviso' size="80%"/>
+  </form>
+
+<br>
+  <form class="container">
+    Selecciona un indicativo:
+    <select id="opciones" name="opciones" onchange="cambioOpcionesSelcet()">
+      <option value="">Selecciona una opcion
+      <option value="Halcón">Halcón
+      <option value="K-1">K-1
+      <option value="Beta-10">Beta-10
+      <option value="Beta-20">Beta-20
+     </select>
+</form>
+<br>
+
+<form class="container">
+  Selecciona requirente:
+  <select id="opciones2" name="opciones2" onchange="cambioOpcionesSelcet()">
+    <option value="">Selecciona una opcion
+    <option value="oficial">oficial
+    <option value="agente encargado">agente encargado
+   </select>
+</form>
+<br>
+
+
+<form class="container" style="text-align: center;">
+  <strong>Texto a copiar</strong>
+  <input type='text' id='showIdSelect' size="80%"/>
+</form>
+
+<br>
+
+
+<form style="text-align: right;">
+  <h3>Agente 127 de la Policia Local de Rota</h3>
+</form>
+</body>
+</html>
