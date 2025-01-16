@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 170, 228, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  </style>
+  </head>
+  <body>
+    <header class="container" style="text-align: center;">
+      <h1>Plantillas Appolo Policía Local de Rota</h1>
+    </header>
+    <br>
+    <form class="container">
+      <A HREF="otra_pagina.html"> Generador de texto para responder avisos </A>
+    </form>
+    <br>
+    <form class="container">
+      <A HREF="otra_pagina.html"> Generador de diligencia de Testigo </A>
+    </form>
+    <br>
+  <br>
+
+
+  <form style="text-align: right;">
+    <h3>Agente 127 de la Policia Local de Rota</h3>
+  </form>
+  </body>
+  </html>
