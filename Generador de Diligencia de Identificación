@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 170, 228, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  </style>
+  <script>
+  function cambioOpciones() {
+    document.getElementById('showId').value = document.getElementById('valorOpciones').value;
+  }
+  function cambioOpcionesSelcet() {
+    document.getElementById('showIdSelect').value = "DILIGENCIA DE IDENTIFICACIÓN DE TESTIGO. Se extiende la presente, siendo las " + document.getElementById('hora').value +
+    " horas del día " + document.getElementById('fecha').value +
+    ", en las Dependencias Policiales por la Unidad Instructora, agente " + document.getElementById('Agente1').value +
+    " y agente " + document.getElementById('Agente2').value +
+    ", actuando como Instructor y Secretario, para HACER CONSTAR: La identificación de la persona que fue TESTIGO de los hechos descritos con anterioridad, siendo la identificación según datos obtenidos del DNI "
+    + document.getElementById('DNI').value +
+    ". Y para que así conste se firma por la Unidad Instructora. CONSTE Y CERTIFICO.";
+  }
+
+  </script>
+</head>
+<body>
+  <header class="container" style="text-align: center;">
+    <h1>Generador de Diligencia de Identificación</h1>
+  </header>
+  <br>
+  <form class="container">
+    Introduce la hora de identificación.:
+    <input type='text' id='hora' size="40%"/>
+    <p>
+    Introduce la fecha de identificación:
+    <input type='text' id='fecha' size="40%"/>
+  </form>
+  <br>
+<form class="container">
+  Introduce Agente 1:
+  <input type='text' id='Agente1' size="40%"/>
+  <p>
+  Introduce Agente 2:
+  <input type='text' id='Agente2' size="40%"/>
+</form>
+<br>
+<form class="container">
+  Introduce DNI Testigo:
+  <input type='text' id='DNI' size="40%" onchange="cambioOpcionesSelcet()"/>
+</form>
+<br>
+<form class="container" style="text-align: center;">
+  <strong>Texto a copiar</strong>
+  <input type='text' id='showIdSelect' size="80%"/>
+</form>
+
+<br>
+
+
+<form style="text-align: right;">
+  <h3>Agente 127 de la Policia Local de Rota</h3>
+</form>
+</body>
+</html>
