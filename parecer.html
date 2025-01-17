@@ -27,7 +27,38 @@
     <h1>Generador de texto de parecer de la fuerza</h1>
   </header>
   <br>
-
+  <form class="container">
+    Selecciona un tipo de colisión:
+    <select id="opciones" name="opciones" onchange="cambioOpcionesSelcet()">
+      <option value="">Selecciona una opcion
+      <option value="colisión frontal angular">colisión frontal angular
+      <option value="colisión frontal excéntrica derecha">colisión frontal excéntrica derecha
+      <option value="colisión frontal excéntrica izquierda">colisión frontal excéntrica izquierda
+      <option value="colisión frontal central">colisión frontal central
+      <option value="colisión frontolateral angular">colisión frontolateral angular
+      <option value="colisión frontolateral central">colisión frontolateral central
+      <option value="colisión frontolateral anterior">colisión frontolateral anterior
+      <option value="colisión frontolateral posterior">colisión frontolateral posterior
+      <option value="colisión angular con finalización en raspado">colisión angular con finalización en raspado
+      <option value="colisión con raspado positivo">colisión con raspado positivo
+      <option value="colisión con raspado negativo">colisión con raspado negativo
+      <option value="colisión por alcance angular">colisión por alcance angular
+      <option value="colisión por alcance excéntrica derecha">colisión por alcance excéntrica derecha
+      <option value="colisión por alcance excéntrica izquierda">colisión por alcance excéntrica izquierda
+      <option value="colisión por alcance central">colisión por alcance central
+      <option value="atropello tipo empujón">atropello tipo empujón
+      <option value="atropello tipo caída">atropello tipo caída
+      <option value="atropello tipo acercamiento">atropello tipo acercamiento
+      <option value="atropello tipo compresión">atropello tipo compresión
+      <option value="atropello tipo arrastramiento">atropello tipo arrastramiento
+      <option value="atropello tipo volteo">atropello tipo volteo
+      <option value="salida de la vía con vuelco">salida de la vía con vuelco
+      <option value="salida de la vía con choque">salida de la vía con choque
+      <option value="salida de la vía con despeñamiento">salida de la vía con despeñamiento
+      <option value="salida de la vía">salida de la vía
+     </select>
+</form>
+<br>
 <form class="container" style="text-align: center;">
   <strong>Texto a copiar</strong>
   <input type='text' id='showIdSelect' size="80%"/>
