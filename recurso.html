@@ -20,6 +20,8 @@
       respuesta = respuesta + " ESTIMA las alegaciones presentadas y no tiene inconveniente en proceder a la anulación de dicha denuncia " + document.getElementById('boletin').value + " así como al archivo del expediente " + document.getElementById('expediente').value;
     }else if (document.getElementById('opciones').value == "DESESTIMA") {
       respuesta = respuesta + " DESESTIMA las alegaciones presentadas y se ratifica en todos y cada uno de los términos de dicha denuncia";
+    }else{
+      respuesta = "";
     }
     respuesta = respuesta +". Lo que tengo el deber de informarle para los efectos que procedan.";
     document.getElementById('showIdSelect2').value = respuesta;
