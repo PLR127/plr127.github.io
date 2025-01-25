@@ -15,7 +15,7 @@
   <script>
   function cambioOpcionesSelcet() {
     document.getElementById('showIdSelect1').value = "Contestación de recurso con número de expediente " + document.getElementById('expediente').value + " en referencia a denuncia con número " + document.getElementById('boletin').value + ".";
-    let respuesta = "Que en respuesta a las alegaciones efectuadas por el señor " + document.getElementById('nombre').value + ", titular del DNI " + document.getElementById('DNI').value + ", con domicilio en "  + document.getElementById('direccion').value + "), este agente debe manifestar lo siguiente: Que en virtud de las alegaciones presentada por el recurrente, solicitando Informe del  Agente Denunciante, manifestar que la denuncia se realiza ___________. Y en base a todo lo expresado anteriormente: Este Agente ";
+    let respuesta = "Que en respuesta a las alegaciones efectuadas por el señor " + document.getElementById('nombre').value + ", titular del DNI " + document.getElementById('DNI').value + ", con domicilio en "  + document.getElementById('direccion').value + ", este agente debe manifestar lo siguiente: Que en virtud de las alegaciones presentada por el recurrente, solicitando Informe del  Agente Denunciante, manifestar que la denuncia se realiza ___________. Y en base a todo lo expresado anteriormente: Este Agente ";
     if (document.getElementById('opciones').value == "ESTIMA"){
       respuesta = respuesta + " ESTIMA las alegaciones presentadas y no tiene inconveniente en proceder a la anulación de dicha denuncia " + document.getElementById('boletin').value + " así como al archivo del expediente " + document.getElementById('expediente').value;
     }else if (document.getElementById('opciones').value == "DESESTIMA") {
