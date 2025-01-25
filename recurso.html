@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  *{box-sizing: border-box;}
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 170, 228, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  </style>
+  <script>
+  function cambioOpcionesSelcet() {
+    document.getElementById('showIdSelect1').value = "Contestación de recurso con número de expediente " + document.getElementById('expediente').value + " en referencia a denuncia con número " + document.getElementById('boletin').value + ".";
+    let respuesta = "Que en respuesta a las alegaciones efectuadas por el señor " + document.getElementById('nombre').value + ", titular del DNI " + document.getElementById('DNI').value + ", con domicilio en "  + document.getElementById('direccion').value + "), este agente debe manifestar lo siguiente: Que en virtud de las alegaciones presentada por el recurrente, solicitando Informe del  Agente Denunciante, manifestar que la denuncia se realiza ___________. Y en base a todo lo expresado anteriormente: Este Agente ";
+    if (document.getElementById('opciones').value == "ESTIMA"){
+      respuesta = respuesta + " ESTIMA las alegaciones presentadas y no tiene inconveniente en proceder a la anulación de dicha denuncia " + document.getElementById('boletin').value + " así como al archivo del expediente " + document.getElementById('expediente').value;
+    }else if (document.getElementById('opciones').value == "DESESTIMA") {
+      respuesta = respuesta + " DESESTIMA las alegaciones presentadas y se ratifica en todos y cada uno de los términos de dicha denuncia";
+    }
+    respuesta = respuesta +". Lo que tengo el deber de informarle para los efectos que procedan.";
+    document.getElementById('showIdSelect2').value = respuesta;
+  }
+
+  </script>
+</head>
+<body>
+  <header class="container" style="text-align: center;">
+    <h1>Generador de Texto para Recursos</h1>
+  </header>
+  <br>
+  <form class="container">
+    Introduce el número de expediente:
+    <input type='text' id='expediente' size="75%"/>
+<br><br>
+    Introduce el número de boletín:
+    <input type='text' id='boletin' size="75%"/>
+  </form>
+
+<br>
+
+<form class="container">
+  Introduce el nombre completo:
+  <input type='text' id='nombre' size="75%"/>
+<br><br>
+  Introduce el DNI:
+  <input type='text' id='DNI' size="75%"/>
+<br><br>
+  Introduce la direccion:
+  <input type='text' id='direccion' size="75%"/>
+</form>
+
+<br>
+
+  <form class="container">
+    Selecciona un resultado:
+    <select id="opciones" name="opciones" onchange="cambioOpcionesSelcet()">
+      <option value="">Selecciona una opcion
+      <option value="ESTIMA">ESTIMA
+      <option value="DESESTIMA">DESESTIMA
+     </select>
+</form>
+<br>
+
+
+<form class="container" style="text-align: center;">
+  <strong>Texto a copiar en Aviso/Requerimiento</strong>
+  <input type='text' id='showIdSelect1' size="75%"/>
+</form>
+
+<br>
+
+<form class="container" style="text-align: center;">
+  <strong>Texto a copiar en Servicio Realizado</strong>
+  <input type='text' id='showIdSelect2' size="75%"/>
+</form>
+
+<br>
+      <form class="container" style="text-align: center;">
+      <A HREF="index"> Atras </A>
+    </form>
+    <br>
+
+
+<form style="text-align: right;">
+  <h3>Agente 127 de la Policia Local de Rota</h3>
+</form>
+</body>
+</html>
